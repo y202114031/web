@@ -6,7 +6,7 @@ async function getConnection(){
         connection = await oracledb.getConnection({
             user:'user106',
             password:'pass',
-            connectionString:'localhost:1521/xe'
+            connectionString:'172.18.7.166:1521/xe'
         });
         console.log('oracle DB 연결성공');
         return connection;

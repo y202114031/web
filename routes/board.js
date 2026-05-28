@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 router.get('/list.json',async function(req, res){
     const page = 1;
     const size = 10;
-    const offset = (page-1) * size ;
+    const offset_rows = (page-1) * size ;
     con=await getConnection();
     try{
         con=await getConnection();

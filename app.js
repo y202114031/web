@@ -23,6 +23,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/haksa', haksaRouter);
 app.use('/board', require('./routes/board'));
+app.use('/posts', require('./routes/posts'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
